@@ -27,7 +27,7 @@ const App = () => {
 
 <Routes>
   <Route path="/Home" element={<Home />} />
-  <Route path="about" element={<About />} />
-  <Route path="NavBar" element={<NavBar />} />
+  <Route path="/about" element={<About />} />
+  <Route path="/NavBar" element={<NavBar />} />
 </Routes>;
 export default App;

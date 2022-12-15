@@ -27,17 +27,14 @@ function NavBar() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">
+            <a className="nav-link" href="/Home">
               Home
             </a>
-            <a className="nav-link" href="/Blog">
-              Blog
+            <a className="nav-link" href="/About">
+              About
             </a>
-            <a className="nav-link" href="/">
-              Mom's Wishlist
-            </a>
-            <a className="nav-link" href="/">
-              Baby Name Generator
+            <a className="nav-link" href="/Movies">
+              Movies
             </a>
           </li>
           <li className="nav-item dropdown">
@@ -53,15 +50,11 @@ function NavBar() {
               Profile
             </a>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a className="dropdown-item" href="/Blog">
-                My Info
+              <a className="dropdown-item" href="/About">
+                About
               </a>
-              <a className="dropdown-item" href="/#">
-                Edit Wishlist
-              </a>
-              <div className="dropdown-divider"></div>
-              <a className="dropdown-item" href="/#">
-                Voting Poll Results
+              <a className="dropdown-item" href="/Movies">
+                Movies
               </a>
             </div>
           </li>
