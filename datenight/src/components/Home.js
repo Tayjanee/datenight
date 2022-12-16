@@ -1,7 +1,10 @@
 import React from "react";
+import NavBar from "./NavBar";
+
 function Home() {
   return (
     <div>
+      <NavBar />
       <nav class="navbar background">
         <ul class="nav-list">
           <div class="logo">

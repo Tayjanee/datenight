@@ -1,0 +1,67 @@
+import React from "react";
+import {NavLink} from "react-router-dom";
+
+
+const Header = () => {
+}
+    <div>
+      <div className="home-header">
+        <h2>DateNight!</h2>
+        <ul className="nav justify-content-center">
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/">
+              Home
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/About">
+              About
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/Movies">
+              Movies
+            </NavLink>
+          </li>
+          {isLoggedIn ? 
+          <li className="nav-item">
+            <NavLink className="nav-link" onClick={logout} >
+              Logout
+            </NavLink>
+          </li> : null}
+        </ul>
+      </div>
+      {isLoggedIn ? 
+        <div className="jumbotronLoggedIn">
+            <div className="content">
+                <h1 className="display-4">Let us do the planning!</h1>
+                <p className="lead">
+            
+                </p>
+            </div> 
+        </div>: 
+        <div className="jumbotron">
+          <div className="content">
+            <h1 className="display-4">Plan your National Parks Trip</h1>
+            <p className="lead">
+                Type any word to fit your
+                mood! You will receive a list of movies that match.
+            </p>
+          </div>
+          <hr className="my-4" />
+          <p className="lead">
+            <NavLink
+              className="btn btn-primary btn-lg"
+              href="#"
+              role="button"
+              to="/login"
+            >
+              Sign in now!
+            </NavLink>
+          </p>
+        </div>
+      }
+    </div>
+  );
+};
+

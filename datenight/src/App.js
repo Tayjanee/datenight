@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Movies from "./components/Movies";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import NavBar from "./components/NavBar";
 
 const App = () => {
+  <NavBar />;
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -25,9 +27,12 @@ const App = () => {
   return <Movies movies={movies} />;
 };
 
-<Routes>
-  <Route path="/Home" element={<Home />} />
-  <Route path="/about" element={<About />} />
-  <Route path="/NavBar" element={<NavBar />} />
-</Routes>;
+<BrowserRouter>
+  <Routes>
+    <Route path="/Home" element={<Home />} />
+    <Route path="/About" element={<About />} />
+    <Route path="/Movies" element={<Movies />} />
+  </Routes>
+</BrowserRouter>;
+
 export default App;
