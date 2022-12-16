@@ -1,7 +1,9 @@
 import React from "react";
 import NavBar from "./NavBar";
+import { useRouteMatch } from "react-router-dom";
 
 function Home() {
+  let match = useRouteMatch();
   return (
     <div>
       <NavBar />
