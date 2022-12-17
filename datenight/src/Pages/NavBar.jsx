@@ -1,11 +1,11 @@
 import React from "react";
 import "./NavBar.css";
 
-function NavBar() {
+const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light navbar-style">
       <a className="navbar-brand" href="/#">
-        Golden
+        DateNight
       </a>
       <button
         className="navbar-toggler"
@@ -76,5 +76,5 @@ function NavBar() {
       </div>
     </nav>
   );
-}
+};
 export default NavBar;
